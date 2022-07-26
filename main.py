@@ -3,24 +3,37 @@
 
 class collegePlacement:
 
-def studentDemographic(name,age,identity,sexuality,nativeLang,parentIncome):
+def studentDemographic(name,age,typeStudent,identity,sexuality,nativeLang):
     name = input("Please enter your full name, including middle name.")
     age = input("Please enter your age.")
     typeStudent = input("Please indicate if you are College Preparatory or Advanced Placement.")
-    identity = input("Does your identity describe you as a: woman, man, transgender, nonbinary, or different.")
+    identity = input("Does your identity describe you as a: woman, man, transgender, non-binary, or different.")
     sexuality = input("Do you consider yourself to be: heterosexual or straight, gay or lesbian, or bisexual, or unlisted.")
     nativeLang = input("What is your native language (first language spoken)?")
     if nativeLang == "English":
         print("No other languages are required.")
     if nativeLang != "English":
         first_lang = input("What language did you first learn growing up?")
-        print(first_lang)
+        print("My first language is: " + first_lang + ".")
     else: print("Give your native language as it is required to continue the application.")
 
-def parentIncome(employed,highestEducation)
-    employed = {"Employed": "Company"}
-    highestEducation = {"Highest Education":"None","Some high school","High school graduate","Some college/University","Two-year college/University graduate","Postgraduate study"}
-    
+#Example function call
+studentDemographic("Blank",18,"AP","non-binary","unlisted","English")
+
+
+def parentIncome(askEmployed,current_employed,unemployedStatus,askhighestEducation)
+    askEmployed = input("Does your single or dual parent work currently?")
+    statusEmployed = {"Employed": "Company"}
+    if employed: current_employed = input("Where do you work?")
+    print(current_employed)
+    else: unemployed = input("How many years have you been unemployed or a stay at home parent?")
+    unemployedStatus = unemployed == current_employed
+    print(unemployedStatus)
+    educationLevels = {"Highest Education":"None","Some high school", "High school graduate", "Some college/University", "Two-year college/University graduate", "Postgraduate study"}
+    askhighestEducation = input("What educational qualifications do you have?")
+    # enter ask highest edu input
+    print("My parent does" + askEmployed + "./n" + "My parent is currently employed at" + current_employed + "./n"" My parent has received this level of education" + askhighestEducation + "./n")
+    print("Currently, my parent is unemployed for" + unemployedStatus + ".")
 
 
 def studentSAT(readingScore,mathScore,writingScore,composite):
