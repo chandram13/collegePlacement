@@ -4,12 +4,12 @@
 class collegePlacement:
 
 def studentDemographic(name,age,typeStudent,identity,sexuality,nativeLang):
-    name = input("Please enter your full name, including middle name.")
-    age = input("Please enter your age.")
-    typeStudent = input("Please indicate if you are College Preparatory or Advanced Placement.")
-    identity = input("Does your identity describe you as a: woman, man, transgender, non-binary, or different.")
-    sexuality = input("Do you consider yourself to be: heterosexual or straight, gay or lesbian, or bisexual, or unlisted.")
-    nativeLang = input("What is your native language (first language spoken)?")
+    print("Please enter your full name, including middle name.")
+    print("Please enter your age.")
+    print("Please indicate if you are College Preparatory or Advanced Placement.")
+    print("Does your identity describe you as a: woman, man, transgender, non-binary, or different.")
+    print("Do you consider yourself to be: heterosexual or straight, gay or lesbian, or bisexual, or unlisted.")
+    print("What is your native language (first language spoken)?")
     if nativeLang == "English":
         print("No other languages are required.")
     if nativeLang != "English":
@@ -22,7 +22,7 @@ studentDemographic("Blank",18,"AP","non-binary","unlisted","English")
 
 
 def parentIncome(askEmployed,current_employed,unemployedStatus,askhighestEducation)
-    askEmployed = input("Does your single or dual parent work currently?")
+    print("Does your single or dual parent work currently?")
     statusEmployed = {"Employed": "Company"}
     if employed: current_employed = input("Where do you work?")
     print(current_employed)
@@ -37,7 +37,7 @@ def parentIncome(askEmployed,current_employed,unemployedStatus,askhighestEducati
 
 
 def studentSAT(ebrwScore,mathScore,composite):
-    ebrwScore = input("Please enter your total reading and writing score you received on the SAT.")
+    print("Please enter your total reading and writing score you received on the SAT.")
     print(askReadingScore)
     if ebrwScore 300 > 200:
         print("Your performance is in the negative quartile of -1.")
@@ -53,7 +53,7 @@ def studentSAT(ebrwScore,mathScore,composite):
         print("Your performance is in the quartile range of 96 to 99 and above.")
     else: print("Please enter a valid input for your reading and writing score.")
 
-    mathScore = input("Please enter your total math score you received on the SAT.")
+    print("Please enter your total math score you received on the SAT.")
     print(mathScore)
     if mathScore 300 > 200:
         print("Your performance is in the negative quartile of -1.")
@@ -89,7 +89,7 @@ def studentSAT(ebrwScore,mathScore,composite):
     else: print("Please enter a valid input for your composite score.")
 
 def studentACT(englishScore,mathScore,readingScore,scienceScore,composite):
-        englishScore = input("Please enter your total english score.")
+        print("Please enter your total english score.")
         print(englishScore)
         if englishScore 10 > 1:
             print("Your english score percentile is between 1 to 7.")
@@ -101,7 +101,7 @@ def studentACT(englishScore,mathScore,readingScore,scienceScore,composite):
             print("Your english score percentile is between 91 to 100.")
         else: print("Please enter a valid input for your english score.")
 
-        mathScore = input("Please enter your total math score.")
+        print("Please enter your total math score.")
         print(mathScore)
         if mathScore 10 > 1:
             print("Your math score percentile is between 1 to 3.")
@@ -113,7 +113,7 @@ def studentACT(englishScore,mathScore,readingScore,scienceScore,composite):
             print("Your math score percentile is between 96 and 100.")
         else: print("Please enter a valid input for your math score.")
 
-        readingScore = input("Please enter your total reading score.")
+        print("Please enter your total reading score.")
         print(readingScore)
         if readingScore 10 > 1:
             print("Your reading score percentile is between 1 to 3.")
@@ -157,7 +157,7 @@ def personalStatements(score):
 
 
 def studentGrades(GPA):
-    GPA = input("Please enter a valid unweighted GPA value between 1.0 and 4.0.")
+    print("Please enter a valid unweighted GPA value between 1.0 and 4.0.")
     if GPA > 1.0:
         print("You are currently failing high school. Increase your grades as much as you can and consider pursuing an adult school.")
     if GPA > 2.0:
